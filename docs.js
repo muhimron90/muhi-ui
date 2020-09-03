@@ -2,8 +2,6 @@ const documentsMd = [
     {
         name: 'introduction',
         content: 'documents/introduction.md',
-        description: 'under documentation progress',
-        usageMode: 'hide',
     },
     {
         name: 'Getting Started',
@@ -12,14 +10,14 @@ const documentsMd = [
             {
                 name: 'Installation',
                 content: 'documents/installation.md',
-                description: 'under documentation progress',
-                usageMode: 'hide',
+               
+                
             },
             {
                 name: 'Configuration',
                 content: 'documents/configuration.md',
-                description: 'under documentation progress',
-                usageMode: 'hide',
+                
+                
             },
         ],
     },

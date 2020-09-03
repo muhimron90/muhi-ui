@@ -3,6 +3,8 @@
 [![Muhi-UI](https://img.shields.io/badge/Muhi--UI-1.0.0-critical)](https://github.com/muhimron90/muhi-ui)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
+- ------------------------
+
 ## What is this  ❓
 
 Simple Component ui for reactjs or CRA
@@ -11,6 +13,7 @@ Simple Component ui for reactjs or CRA
 >
 > > Support React @16.x
 
+- ------------------------
 ## Installation Guide 💎
 
 ### install ↩️
@@ -21,6 +24,8 @@ Simple Component ui for reactjs or CRA
 
 `npm uninstall @muhimron90/muhi-ui`
 
+
+- ------------------------
 ## How to Use ❓
 #### Example 🔐
 
@@ -28,10 +33,10 @@ Simple Component ui for reactjs or CRA
 import React from 'react'
 import {Button} from '@muhimron90/muhi-ui'
 
-class App () extends React.Component {
+class App extends React.Component {
     constructor(props){
         super(props);
-        this.state : {}
+        this.state = {}
     }
     render(){
         return
@@ -47,3 +52,11 @@ class App () extends React.Component {
 #### Options | Props :
 - *text_type* - _String_
 - *text* - _default_ | "some Text"
+
+- ------------------------
+
+- [x] test Publish package
+- [ ] fix export component
+- [ ] add new components
+
+--------------------------
