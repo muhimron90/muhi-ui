@@ -73,8 +73,7 @@
             "pre-commit": [
                 "lint-staged",
                 "pretty-quick --staged"
-            ],
-            "pre-push": "npm test"
+            ]
         }
     },
     "lint-staged": {
