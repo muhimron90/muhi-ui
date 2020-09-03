@@ -1,15 +1,16 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": [
-    [
-      "babel-plugin-styled-components",
-      {
-        "ssr": false,
-        "displayName": false,
-        "minify": false,
-        "transpileTemplateLiterals": false
-      }
-    ],
-    ["@babel/plugin-proposal-class-properties", { "loose": true }]
-  ]
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": [
+        [
+            "babel-plugin-styled-components",
+            {
+                "ssr": false,
+                "displayName": false,
+                "minify": false,
+                "transpileTemplateLiterals": false
+            }
+        ],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        "@babel/plugin-syntax-jsx"
+    ]
 }

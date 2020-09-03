@@ -26,12 +26,8 @@
         "styled-components": "^5"
     },
     "peerDependencies": {
-        "babel-plugin-styled-components": "^1.x",
         "react": "^16.x",
-        "react-dom": "^16.x",
-        "react-styleguidist": "^11.x",
-        "styled-components": "^5.x",
-        "webpack": "^4.x"
+        "react-dom": "^16.x"
     },
     "dependencies": {
         "prop-types": "^15.7.2"
@@ -39,6 +35,7 @@
     "devDependencies": {
         "@babel/core": "^7.11.5",
         "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/plugin-syntax-jsx": "^7.10.4",
         "@babel/preset-env": "^7.11.5",
         "@babel/preset-react": "^7.10.4",
         "babel-eslint": "^10.1.0",
