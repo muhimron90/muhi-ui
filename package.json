@@ -1,0 +1,85 @@
+{
+    "name": "@muhimron90/muhi-ui",
+    "version": "1.0.0",
+    "description": "Muhi-UI React Components",
+    "main": "src/index.js",
+    "scripts": {
+        "sg:dev": "npx styleguidist server --config ./styleguide.config.js",
+        "sg:build": "npx styleguidist build",
+        "prettier:all": "prettier --write \"{,!(node_modules)/**/}*.js\"",
+        "prettier:src": "prettier --write src/**/*",
+        "eslint": "eslint src/**/*.{js,jsx} --quiet",
+        "lint": "eslint ./ --ignore-path .gitignore",
+        "lint:fix": "eslint src/**/*.{js,jsx} --fix",
+        "test": "echo \"No test specified\""
+    },
+    "keywords": [
+        "muhi-ui",
+        "components-library"
+    ],
+    "author": "Muhamad Imron",
+    "license": "MIT",
+    "resolutions": {
+        "styled-components": "^5"
+    },
+    "peerDependencies": {
+        "babel-plugin-styled-components": "^1.x",
+        "react": "^16.x",
+        "react-dom": "^16.x",
+        "react-styleguidist": "^11.x",
+        "styled-components": "^5.x",
+        "webpack": "^4.x"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.5",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/preset-env": "^7.11.5",
+        "@babel/preset-react": "^7.10.4",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "babel-plugin-styled-components": "^1.11.1",
+        "css-loader": "^4.2.2",
+        "eslint": "^7.8.1",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.20.6",
+        "husky": "^4.2.5",
+        "prettier": "^2.1.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-styleguidist": "^11.0.8",
+        "style-loader": "^1.2.1",
+        "styled-components": "^5.1.1",
+        "webpack": "^4.44.1"
+    },
+    "browserslist": [
+        "last 2 Chrome versions",
+        "last 2 Opera versions",
+        "last 2 Firefox versions",
+        "last 2 Edge versions",
+        "last 1 Safari version",
+        "IE >= 11"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": [
+                "lint-staged",
+                "pretty-quick --staged"
+            ],
+            "pre-push": "npm test"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,css,md,scss,ts,tsx}": [
+            "eslint",
+            "prettier --write --ignore-unknown",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "prop-types": "^15.7.2"
+    }
+}

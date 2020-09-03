@@ -1,0 +1,44 @@
+#node_modules
+node_modules/
+npm-debug.log
+node_modules
+	
+	
+	
+#yarn 
+.yarnclean
+yarn-error.log
+	
+	
+#others stuff
+Catatan.md
+# Bundle artifact
+*.jsbundle
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+# OSX
+#
+.DS_Store
+	
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+
+# dependencies
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+#env
+.env
+
