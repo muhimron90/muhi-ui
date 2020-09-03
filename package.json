@@ -1,6 +1,6 @@
 {
     "name": "@muhimron90/muhi-ui",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Muhi-UI React Components",
     "main": "src/index.js",
     "scripts": {
@@ -12,7 +12,9 @@
         "lint": "eslint ./ --ignore-path .gitignore",
         "lint:fix": "eslint src/**/*.{js,jsx} --fix",
         "test": "echo \"No test specified\"",
-        "pub:npm": "np --no-2fa"
+        "pub:npm": "np --no-2fa",
+        "pretty": "pretty-quick --staged",
+        "lints": "lint-staged && npm run pretty"
     },
     "keywords": [
         "muhi-ui",
@@ -51,8 +53,10 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.6",
         "husky": "^4.2.5",
+        "lint-staged": "^10.3.0",
         "np": "^6.5.0",
         "prettier": "^2.1.1",
+        "pretty-quick": "^3.0.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-styleguidist": "^11.0.8",
@@ -71,8 +75,7 @@
     "husky": {
         "hooks": {
             "pre-commit": [
-                "lint-staged",
-                "pretty-quick --staged"
+                "npm run lints"
             ]
         }
     },
