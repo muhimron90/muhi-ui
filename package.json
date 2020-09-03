@@ -1,6 +1,6 @@
 {
     "name": "@muhimron90/muhi-ui",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Muhi-UI React Components",
     "main": "src/index.js",
     "scripts": {
