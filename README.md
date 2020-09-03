@@ -1,7 +1,7 @@
 # muhi-ui Components UI 📋
 
-[![Muhi-UI](https://img.shields.io/badge/Muhi--UI-1.0.0-critical)](https://github.com/muhimron90/muhi-ui)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Muhi-UI](https://img.shields.io/github/v/tag/muhimron90/muhi-ui?color=green&label=Version&style=flat-square)](https://github.com/muhimron90/muhi-ui/tags)
+[![MIT license](https://img.shields.io/npm/l/@muhimron90/muhi-ui)](https://lbesson.mit-license.org/)
 
 - ------------------------
 
