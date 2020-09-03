@@ -11,7 +11,8 @@
         "eslint": "eslint src/**/*.{js,jsx} --quiet",
         "lint": "eslint ./ --ignore-path .gitignore",
         "lint:fix": "eslint src/**/*.{js,jsx} --fix",
-        "test": "echo \"No test specified\""
+        "test": "echo \"No test specified\"",
+        "pub:npm": "np"
     },
     "keywords": [
         "muhi-ui",
@@ -30,6 +31,9 @@
         "styled-components": "^5.x",
         "webpack": "^4.x"
     },
+    "dependencies": {
+        "prop-types": "^15.7.2"
+    },
     "devDependencies": {
         "@babel/core": "^7.11.5",
         "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -47,6 +51,7 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.6",
         "husky": "^4.2.5",
+        "np": "^6.5.0",
         "prettier": "^2.1.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -79,7 +84,15 @@
             "git add"
         ]
     },
-    "dependencies": {
-        "prop-types": "^15.7.2"
+    "bugs": {
+        "url": "https://github.com/muhimron90/muhi-ui/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/muhimron90/muhi-ui.git"
+    },
+    "homepage": "https://github.com/muhimron90/muhi-ui.git#readme",
+    "publishConfig": {
+        "access": "public"
     }
 }
