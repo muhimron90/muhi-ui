@@ -8,7 +8,7 @@ import './styles.css'
     * @function Button
 * */
 
-export const Button = (props) => {
+const Button = (props) => {
     const { text, onPress } = props
 
     return (
@@ -28,3 +28,4 @@ Button.defaultProps = {
     onPress: () => {},
     text: 'Button',
 }
+export default Button

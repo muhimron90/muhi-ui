@@ -14,6 +14,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
+                exclude: /node_modules/,
                 use: ['style-loader', 'css-loader'],
             },
         ],
@@ -21,4 +22,5 @@ module.exports = {
     resolve: {
         extensions: ['*', '.js', '.jsx'],
     },
+    devtool: 'source-map',
 }
