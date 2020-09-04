@@ -95,7 +95,7 @@
         "type": "git",
         "url": "git+https://github.com/muhimron90/muhi-ui.git"
     },
-    "homepage": "https://github.com/muhimron90/muhi-ui.git#readme",
+    "homepage": "https://muhimron90.github.io/muhi-ui",
     "publishConfig": {
         "access": "public"
     }
