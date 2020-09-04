@@ -15,7 +15,7 @@ Catatan.md
 # Bundle artifact
 *.jsbundle
 #
-build/
+# build/
 .idea
 .gradle
 local.properties
