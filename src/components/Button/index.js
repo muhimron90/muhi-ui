@@ -9,10 +9,10 @@ import './styles.css'
 * */
 
 export const Button = (props) => {
-    const { text } = props
+    const { text, onPress } = props
 
     return (
-        <button type="button" className="button">
+        <button onClick={onPress} type="button" className="button">
             {text}
         </button>
     )
@@ -22,7 +22,9 @@ Button.propTypes = {
      *  text.
      */
     text: PropTypes.string,
+    onPress: PropTypes.func,
 }
 Button.defaultProps = {
+    onPress: () => {},
     text: 'Button',
 }

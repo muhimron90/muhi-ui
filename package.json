@@ -1,11 +1,12 @@
 {
     "name": "@muhimron90/muhi-ui",
     "version": "1.0.5",
+    "private": "true",
     "description": "Muhi-UI React Components",
     "main": "src/index.js",
     "scripts": {
         "sg:dev": "npx styleguidist server --config ./styleguide.config.js",
-        "sg:build": "npx styleguidist build",
+        "sg:build": "npx styleguidist build ",
         "prettier:all": "prettier --write \"{,!(node_modules)/**/}*.js\"",
         "prettier:src": "prettier --write src/**/*",
         "eslint": "eslint src/**/*.{js,jsx} --quiet",
@@ -30,6 +31,7 @@
         "react-dom": "^16.x"
     },
     "dependencies": {
+        "core-js": "^3.6.5",
         "prop-types": "^15.7.2"
     },
     "devDependencies": {
@@ -45,10 +47,13 @@
         "eslint": "^7.8.1",
         "eslint-config-airbnb": "^18.2.0",
         "eslint-config-prettier": "^6.11.0",
+        "eslint-config-react-app": "^5.2.1",
+        "eslint-plugin-flowtype": "^5.2.0",
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-jsx-a11y": "^6.3.1",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.6",
+        "eslint-plugin-react-hooks": "^4.1.0",
         "husky": "^4.2.5",
         "lint-staged": "^10.3.0",
         "np": "^6.5.0",
@@ -62,12 +67,10 @@
         "webpack": "^4.44.1"
     },
     "browserslist": [
-        "last 2 Chrome versions",
-        "last 2 Opera versions",
-        "last 2 Firefox versions",
-        "last 2 Edge versions",
-        "last 1 Safari version",
-        "IE >= 11"
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
     ],
     "husky": {
         "hooks": {

@@ -6,7 +6,7 @@
         "codeFrame": false
     },
     "plugins": ["prettier"],
-    "extends": ["airbnb", "prettier", "prettier/react"],
+    "extends": ["airbnb", "react-app", "prettier", "prettier/react"],
     "env": { "browser": true, "jest": true, "es6": true, "node": true },
     "rules": {
         "max-len": ["error", { "code": 100 }],

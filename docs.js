@@ -1,23 +1,16 @@
 const documentsMd = [
     {
-        name: 'introduction',
-        content: 'documents/introduction.md',
-    },
-    {
         name: 'Getting Started',
-        usageMode: 'hide',
+        content: 'documents/introduction.md',
+        usageMode: 'expand',
         sections: [
             {
                 name: 'Installation',
                 content: 'documents/installation.md',
-               
-                
             },
             {
                 name: 'Configuration',
                 content: 'documents/configuration.md',
-                
-                
             },
         ],
     },
@@ -31,7 +24,7 @@ const documentsMd = [
     {
         name: 'Live Demo',
         external: true,
-        href: '#',
+        href: 'https://muhimron90.github.io/muhi-ui/',
     },
 ]
 

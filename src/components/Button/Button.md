@@ -1,7 +1,7 @@
 ```jsx
 <Button />;
 
-<Button text="click me" />
+<Button text="click me" onPress={() => alert("Oh! Hello Bois")} />
 ```
 
 
