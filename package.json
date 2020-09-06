@@ -3,8 +3,12 @@
     "version": "1.0.5",
     "private": "true",
     "description": "Muhi-UI React Components",
-    "main": "src/index.js",
+    "main": "dist/index.js",
     "scripts": {
+        "start": "webpack-dev-server --config ./config/webpack/webpack.config.js --mode=development ",
+        "dist": " http-server dist",
+        "watch": "webpack --progress --config ./config/webpack/webpack.config.js --watch --mode=development",
+        "build": "webpack --config ./config/webpack/webpack.config.js --mode=production",
         "sg:dev": "npx styleguidist server --config ./styleguide.config.js",
         "sg:build": "npx styleguidist build ",
         "prettier:all": "prettier --write \"{,!(node_modules)/**/}*.js\"",
@@ -27,8 +31,8 @@
         "styled-components": "^5"
     },
     "peerDependencies": {
-        "react": "^16.x",
-        "react-dom": "^16.x"
+        "react": ">=16",
+        "react-dom": ">=16"
     },
     "dependencies": {
         "core-js": "^3.6.5",
@@ -45,6 +49,7 @@
         "babel-eslint": "^10.1.0",
         "babel-loader": "^8.1.0",
         "babel-plugin-styled-components": "^1.11.1",
+        "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^4.2.2",
         "eslint": "^7.8.1",
         "eslint-config-airbnb": "^18.2.0",
@@ -56,24 +61,37 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.20.6",
         "eslint-plugin-react-hooks": "^4.1.0",
+        "file-loader": "^6.1.0",
+        "html-webpack-plugin": "^4.4.1",
+        "http-server": "^0.12.3",
         "husky": "^4.2.5",
         "lint-staged": "^10.3.0",
+        "mini-css-extract-plugin": "^0.11.0",
         "np": "^6.5.0",
         "prettier": "^2.1.1",
         "pretty-quick": "^3.0.0",
         "react-styleguidist": "^11.0.8",
         "style-loader": "^1.2.1",
         "styled-components": "^5.1.1",
-        "webpack": "^4.44.1"
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
     },
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 11",
-        "last 1 version",
-        "Firefox ESR",
-        "not op_mini all"
-    ],
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all",
+            "not ie <= 11",
+            "last 1 version",
+            "Firefox ESR"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
     "husky": {
         "hooks": {
             "pre-commit": [

@@ -37,8 +37,9 @@ buck-out/
 /coverage
 
 # production
-/build
-
+# /build
+dist
+dist/
 #env
 .env
 

@@ -17,7 +17,7 @@ const documentsMd = [
     {
         name: 'Components',
         content: 'documents/ui.md',
-        components: 'src/components/[A-Z]**/*.js',
+        components: 'src/components/**/[A-Z]*.js',
         exampleMode: 'collapse', // 'hide' | 'collapse' | 'expand'
         usageMode: 'expand', // 'hide' | 'collapse' | 'expand'
     },

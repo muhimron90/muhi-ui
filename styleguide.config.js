@@ -17,7 +17,7 @@ module.exports = {
             sidebarBackground: '#013444',
         },
         fontFamily: {
-            base: '"Open Sans", sans-serif',
+            base: '"Fira Sans", sans-serif',
         },
     },
     styles: {
