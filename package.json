@@ -13,9 +13,9 @@
         "sg:build": "npx styleguidist build ",
         "prettier:all": "prettier --write \"{,!(node_modules)/**/}*.js\"",
         "prettier:src": "prettier --write src/**/*",
-        "eslint": "eslint src/**/*.{js,jsx} --quiet",
-        "lint": "eslint ./ --ignore-path .gitignore",
-        "lint:fix": "eslint src/**/*.{js,jsx} --fix",
+        "eslint": "eslint \"src/**/*.{js,jsx,css}\" ",
+        "lint": "eslint ./ --ignore-path .gitignore ",
+        "lint:fix": "eslint  src/**/*.{js,jsx,css} --fix",
         "test": "echo \"No test specified\"",
         "pub:npm": "np --no-2fa",
         "pretty": "pretty-quick --staged",
@@ -31,8 +31,9 @@
         "styled-components": "^5"
     },
     "peerDependencies": {
-        "react": ">=16",
-        "react-dom": ">=16"
+        "react": ">= 16",
+        "react-dom": ">= 16",
+        "styled-components": ">= 3"
     },
     "dependencies": {
         "core-js": "^3.6.5",
@@ -43,6 +44,7 @@
     "devDependencies": {
         "@babel/core": "^7.11.5",
         "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
         "@babel/plugin-syntax-jsx": "^7.10.4",
         "@babel/preset-env": "^7.11.5",
         "@babel/preset-react": "^7.10.4",
@@ -73,6 +75,7 @@
         "react-styleguidist": "^11.0.8",
         "style-loader": "^1.2.1",
         "styled-components": "^5.1.1",
+        "terser-webpack-plugin": "^4.1.0",
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.0"
