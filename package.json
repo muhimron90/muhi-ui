@@ -1,7 +1,6 @@
 {
     "name": "@muhimron90/muhi-ui",
     "version": "1.0.5",
-    "private": "true",
     "description": "Muhi-UI React Components",
     "main": "dist/index.js",
     "scripts": {
