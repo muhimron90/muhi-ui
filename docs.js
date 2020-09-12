@@ -2,7 +2,7 @@ const documentsMd = [
     {
         name: 'Getting Started',
         content: 'documents/introduction.md',
-        usageMode: 'expand',
+        usageMode: 'collapse',
         sections: [
             {
                 name: 'Installation',
@@ -17,9 +17,9 @@ const documentsMd = [
     {
         name: 'Components',
         content: 'documents/ui.md',
-        components: 'src/components/[A-Z]**/*.js',
+        components: 'src/components/**/[A-Z]*.js',
         exampleMode: 'collapse', // 'hide' | 'collapse' | 'expand'
-        usageMode: 'expand', // 'hide' | 'collapse' | 'expand'
+        usageMode: 'collapse', // 'hide' | 'collapse' | 'expand'
     },
     {
         name: 'Live Demo',
