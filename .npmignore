@@ -23,4 +23,7 @@ config/
 styleguide.config.js
 docs.js
 documents
+node_modules/
 npm-debug.log
+tests
+coverage/
