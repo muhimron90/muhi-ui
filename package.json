@@ -7,7 +7,7 @@
         "start": "webpack-dev-server --config ./config/webpack/webpack.config.js --mode=development ",
         "dist": " http-server dist",
         "watch": "webpack --progress --config ./config/webpack/webpack.config.js --watch --mode=development",
-        "build": "webpack --config ./config/webpack/webpack.config.js --mode=production",
+        "build": "webpack --config ./config/webpack/webpack.prod.js",
         "sg:dev": "npx styleguidist server --config ./styleguide.config.js",
         "sg:build": "npx styleguidist build ",
         "prettier:all": "prettier --write \"{,!(node_modules)/**/}*.js\"",

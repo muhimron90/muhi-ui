@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './assets/logo.png'
-import { Button } from './components/Button'
+import Button from './components/Button/Button'
 /* eslint import/no-unresolved: 2 */
 import './styles.css'
 
