@@ -1,4 +1,4 @@
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+<div align="center">
 <img src="https://raw.githubusercontent.com/muhimron90/muhi-ui/master/src/assets/logo.png" alt="Muhi-Ui Logo" width="150" height="150">
 <div">
 <h2 style="text-align:center;">Muhi-UI Components Library</h2>
